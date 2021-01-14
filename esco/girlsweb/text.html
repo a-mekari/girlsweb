@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>女性のお悩み共有広場</title>
+    <meta name="discription" content="生活の不満や悩みを共有するためのチャット広場。DIYと料理が好きなOLが集合しました！">
+    <meta name="keywords" content="DIY,料理,ディスポーザー,家事">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Merriweather:ital,wght@1,300&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            //ナビゲーション開閉の指定
+            $("#openBtn i").click(function(){
+                $("header nav").addClass("open");
+                $("#openBtn").addClass("hidden");
+            });
+            $("#closeBtn i").click(function(){
+                $("header nav").removeClass("open");
+                $("#openBtn").removeClass("hidden");
+            });
+            //スムーズスクロールの指定
+            $('a[href=#top]').click(function() {
+                $('body,html').animate({scrollTop:0}, 400, 'swing');
+            });
+        });
+    </script>        
+</head>
+<body>
+    <div id="container">
+        <header>
+            <!--ロゴ-->
+            <h1><img src="images/XXXX.svg" alt="chat広場"></h1>　
+            <p id="openBtn"><i class="fas fa-bars"></i></p>
+            <nav id="nav">
+                <p id="closeBtn"><i class="fas fa-times"></i></p>
+                <ul>
+                    <li><a href="#">chat広場</a></li>
+                    <li><a href="#">女性限定プレゼント</a></li>
+                    <li><a href="#">SNS</a></li>
+                    <li><a href="#">相談室</a></li>
+                </ul>
+            </nav>　
+            <p id="copy"><br><br><br><br></p>              　
+        </header>
+
+        <main>
+            <section id="concept">
+            <h2>Concept</h2>
+            <p><img src="images/xxxx" alt="#" style="width:200px;height:auto;float:right;margin-left:1rem;"></p>
+            <p>~令和OLのchat広場~</p>
+            <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+            <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+            </section>
+            <section id="services">
+                <h2>Services</h2>
+                <div class="service">
+                    <h3><i class="fa fa-wrench fa-2x"></i><br>DIY</h3>
+                    <p>DIY好き女子！インテリアが大好き、キッチンもリビングも自分でデザインするのが大好き<a href="#">詳しく見る</a></p>
+                </div>
+                <div class="service">
+                    <h3><i class="fa fa-heart fa-2x"></i><br>同棲・結婚</h3>
+                    <p>同棲生活に不満あり！最近結婚したり、彼氏と同棲を始めたけどストレスが多い・・・悩みを共有したい！<a href="#">詳しく見る</a></p>
+                </div>
+                <div class="service">
+                    <h3><i class="fas fa-utensils fa-2x"></i><br>料理</h3>
+                    <p>料理好き女子!簡単で美味しいものが、余った食材で色々作れたら楽だよね。疲れて帰るとあと片付けも面倒。<a href="#">詳しく見る</a></p>
+                </div>
+                <div class="service">
+                <h3><i class="fa fa-train fa-2x"></i><br>旅行</h3>
+                <p>旅行大好き！コロナでなかなか行けないのが辛い。日帰りで楽しめる冬にオススメ場所！<a href="#">詳しく見る</a></p>
+                </div>
+            </section><!--#services-->
+            <section id="SNS">
+                <h2>Sns</h2>
+                <div class="wrapper">
+                <div class="sns-box">
+                    <h3 class="sub-title">YouTube</h3>
+                    YouTube動画
+                </div>
+                <div class="sns-box">
+                <h3 class="sub-title">Instagram</h3>
+                    Instagramプラグイン
+                </div>
+                <div class="sns-box">
+                    <h3 class="sub-title">Twitter</h3>
+                    Twitterプラグイン
+                </div>
+                </div><!--.wrapper-->
+            </section><!--#sns-->
+        </main>
+
+        <footer>
+            <div class="inner">
+                <h3>株式会社EHS</h3>
+                <img src="images/map.png" alt="会社所在地" id="map">
+                <dl>
+                    <dt>Address</dt>
+                    <dd>東京都xxxxxxxxxxxx</dd>
+                    <dt>Phone</dt>
+                    <dd>03-1234-5678</dd>
+                    <dt>Mail</dt>
+                    <dd>xxxxx@yyyyy.com</dd>
+                    <dt>Open</dt>
+                    <dd>10:00〜18：00</dd>
+                </dl>
+            <p id="copyright"><small>&copy; 2021 EHS</small></p>
+            </div><!--inner-->
+        </footer>  
+    </div><!--container--> 
+</body>
+</html>
